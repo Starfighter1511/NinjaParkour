@@ -22,6 +22,7 @@ export class Preload extends Phaser.Scene {
         this.loadMap();
         this.loadPlayerSpritesheets();
         this.loadTrampolineSpritesheets();
+        this.loadSawSpritesheets();
     }
 
     create = () => {
@@ -74,6 +75,19 @@ export class Preload extends Phaser.Scene {
             frameConfig: {
                 frameWidth: 28,
                 frameHeight: 28,
+                startFrame: 0,
+                endFrame: 7
+            }
+        });
+    }
+
+    loadSawSpritesheets = () => {
+        this.load.spritesheet({
+            key: `saw_on`,
+        url: `assets/PixelAdventure/Traps/Saw/On (38x38).png`,
+            frameConfig: {
+                frameWidth: 38,
+                frameHeight: 38,
                 startFrame: 0,
                 endFrame: 7
             }

@@ -77,11 +77,11 @@
             "scaleInDock": 1
         },
         "level1.tmx": {
-            "scale": 1.5,
-            "selectedLayer": 6,
+            "scale": 0.7,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 593.3333333333333,
-                "y": 2336.333333333333
+                "x": 528.5714285714286,
+                "y": 3380
             }
         },
         "level1.tmx#Back_Brown": {
@@ -102,26 +102,26 @@
             "scaleInEditor": 2.69
         },
         "level1.tmx#back_brown": {
-            "scaleInDock": 4,
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "level1.tmx#sand_mud_ice": {
-            "scaleInDock": 4,
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "level1.tmx#saw": {
-            "scaleInDock": 4,
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "level1.tmx#spikes": {
-            "scaleInDock": 4,
+            "scaleInDock": 1,
             "scaleInEditor": 2.69
         },
         "level1.tmx#terrain": {
-            "scaleInDock": 4
+            "scaleInDock": 1
         },
         "level1.tmx#terrain_collide": {
-            "scaleInDock": 4,
+            "scaleInDock": 1,
             "scaleInEditor": 2.69
         },
         "level1.tmx#trampoline": {

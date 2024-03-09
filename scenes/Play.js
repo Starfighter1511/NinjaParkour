@@ -1,6 +1,7 @@
 
 import { Player } from '../objects/Player.js';
 import { Trampoline } from '../objects/Trampoline.js'
+import { Saw } from '../objects/Saw.js'
 
 export class Play extends Phaser.Scene {
 
@@ -54,6 +55,17 @@ export class Play extends Phaser.Scene {
             trampoline.jump(player);
         })
 
+        //Erstelle ein Saw für jede Saw in der Sawebene
+        const sawLayer = map.getObjectLayer("saw");
+        const sawList = [];
+        for (const saw of sawLayer.objects) {
+            const newSaw = new Saw(this, saw.x, saw.y)
+            sawList.push(newSaw)
+        }
+        //Kollision mit Saw
+        this.physics.add.collider(this.player, sawList, (player, saw) =>{
+            player.kill();
+        })
 
 
 
